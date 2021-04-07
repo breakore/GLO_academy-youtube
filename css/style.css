@@ -3,7 +3,9 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Mulish', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .header {
@@ -13,6 +15,7 @@ body {
   padding-right: 70px;
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
 }
 
 .menu-button {
@@ -58,6 +61,7 @@ body {
   padding-bottom: 12px;
   padding-left: 23px;
   padding-right: 23px;
+  width: 100%;
 }
 
 .button-search {
@@ -110,4 +114,65 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+.container {}
+
+.sidebar {
+  margin-left: 32px;
+}
+
+.nav {}
+
+.nav-menu {
+  margin-top: 0;
+  margin-bottom: 60px;
+  padding-left: 0;
+}
+
+.nav-item {
+  list-style-type: none;
+  margin-bottom: 28px;
+}
+
+.icon {
+  fill: #000;
+  opacity: 0.24;
+}
+
+.icon-home {}
+
+.nav-text {
+  margin-left: 13px;
+}
+
+.icon-trending {}
+
+.icon-subscriptions {}
+
+.nav-link {
+  text-decoration: none;
+  color: #898989;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link:hover {
+  color: red;
+}
+
+.nav-link:hover .icon {
+  fill: red;
+}
+
+.nav-image {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.nav-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #898989;
 }
