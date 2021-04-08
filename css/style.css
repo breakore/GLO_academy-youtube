@@ -16,6 +16,12 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 99;
 }
 
 .menu-button {
@@ -119,7 +125,14 @@ body {
 .container {}
 
 .sidebar {
-  margin-left: 32px;
+  /* margin-left: 32px; */
+  position: fixed;
+  width: 11%;
+  left: 0;
+  height: calc(100% - 114px);
+  top: 114px;
+  overflow-y: auto;
+  background-color: #fff;
 }
 
 .nav {}
@@ -175,4 +188,144 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #898989;
+}
+
+.content {
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  margin-top: 85px;
+  padding-left: 13%;
+  padding-top: 30px;
+}
+
+.channel {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.channel-title {
+  text-decoration: none;
+  color: #19202C;
+  display: flex;
+  align-items: center;
+  font-weight: Bold;
+  Font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.channel-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.channel-text {
+  margin-left: 20px;
+}
+
+.recommended {
+  margin-left: 0;
+}
+
+.swiper-slide {}
+
+.video-card {
+  width: 250px;
+}
+
+.video-thumb {
+  width: 250px;
+  height: 150px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-thumb-recommended {
+  width: 540px;
+  height: 250px;
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-card-recommended {
+  width: 540px;
+}
+
+.thumbnail {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 3);
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  border-radius: 12px;
+  color: #fff;
+  padding: 3px 9px;
+}
+
+.video-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #19202C;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+.vieo-info {
+  display: flex;
+  font-size: 13px;
+  line-height: 16px;
+  color: #C2C2C2;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.video-counter {
+  display: flex;
+}
+
+.video-views {
+  margin-right: 5px;
+}
+
+.video-views:after {
+  content: "";
+  width: 2px;
+  height: 2px;
+  background-color: #c2c2c2;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.video-date {}
+
+.video-channel {}
+
+.icon-left {}
+
+.icon-right {}
+
+.channel-button {
+  cursor: pointer;
+}
+
+.slider-buttons {
+  position: absolute;
+  right: 8%;
+  top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 66px;
 }
